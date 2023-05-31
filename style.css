@@ -1,0 +1,306 @@
+
+ body{
+    background: linear-gradient(90deg, #e1c9ed 0%, #96c6eb 100%);
+    padding: 20px 0;
+}
+button{
+	cursor: pointer;
+}
+
+header {
+	width: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.caja__header{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+	height: 80px;
+}
+.header {
+	width: 90%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	gap: 30em;
+}
+
+.logo{
+	max-height: 45px;
+	height: 100%;
+	min-height: 40px;
+}
+
+.caja {
+	margin: auto 40px auto auto;
+	width: 90%;
+	align-items: end;
+	min-height: calc(100vh - 80px - 56px);
+	display: grid;
+	padding: 1rem;
+	grid-template-columns: 2.5fr 1fr;
+	gap: 1rem;
+}
+.texto {
+	width: 100%;
+	height: 92%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: var(--color-lightBlue);
+}
+.inputtextarea {
+	width: 100%;
+	max-height: 350px;
+	min-height: 50px;
+	background: transparent;
+	border: none;
+	outline: none;
+	resize: none;
+	font-size: 32px;
+	color: var(--color-lightBlue);
+	font-family: 'Space Mono', monospace;
+}
+textarea::placeholder {
+	color: var(--color-lightBlue);
+}
+.content_botones {
+	min-height: 80px;
+}
+.info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	text-align: center;
+	font-size: 22px;
+	color: var(--color-lightBlue);
+}
+.botones {
+	display: flex;
+	justify-content: space-evenly;
+	padding: .8rem;
+	flex-wrap: wrap;
+	gap: .8rem;
+}
+.button_encriptar,
+.button_desencriptar,
+.button_copiar {
+	width: 45%;
+	max-width: 290px;
+	min-width: 160px;
+	height: 60px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 10px;
+	border: none;
+	transition : 661ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+cursor: pointer;
+text-transform: uppercase;
+}
+.button_encriptar,
+.button_desencriptar{
+	box-shadow: 3px 4px 0px 0px #030303;
+	display:inline-block;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:12px 44px;
+	text-decoration:none;
+}
+.button_encriptar:hover,.button_desencriptar:hover{
+	background-color:#a0f2df;
+}
+.button_encriptar:active,.button_desencriptar:active{
+	position:relative;
+	top:1px;
+}
+.button_copiar{
+	width: 100%;
+	min-width: 100px;
+	box-shadow: 3px 4px 0px 0px #000000;
+	background-color:#ffffff;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:12px 44px;
+	text-decoration:none;
+}
+.button_copiar:hover {
+	background-color:#9eefd0;
+}
+.button_copiar:active {
+	position:relative;
+	top:1px;
+}
+
+.bn_ocultar {
+	display: none;
+}
+.right {
+	align-items: center;
+	width: 100%;
+	height: calc(100% + 60px);
+	background: transparent;
+	border-radius: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 16px;
+	gap: 32px;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border:1px solid #000000;
+}
+.ajuste{
+	justify-content: space-between;
+}
+.munieco{
+	min-width: 230px;
+	width: 50%;
+}
+.ocultar{
+	display: none;
+}
+.textoFinal{
+	background: transparent;
+	width: 100%;
+	font-size: 24px;
+	color: var(--color-lightBlue);
+	border: none;
+	outline: none;
+	text-align: center;
+	overflow: hidden;
+	resize: none;
+	pointer-events: none;
+	font-family: 'Space Mono', monospace;
+}
+.textoFinal::placeholder{
+	color: var(--color-lightBlue);
+}
+.ajustar {
+	height: auto;
+	min-height: calc(100% - 67px - 32px);
+	pointer-events: all;
+	text-align: left;
+	overflow: auto;
+}
+footer {
+	width: 100%;
+	min-height: 56px;
+	height: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.nombre{
+	font-size: 18px;
+	color: white;
+}
+.nombre a{
+	font-size: 18px;
+	color: white;
+}
+.usuario{
+	color: #000;
+	font-style: italic;
+}
+.git{
+	width: 30px;
+}
+@media screen and (max-width: 840px) {
+	.tit{
+		font-size: 2em;
+	}
+	.header {
+		width: 90%;
+		height: auto;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		gap: 4em;
+		text-align: center;
+	}
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 65% auto;
+		margin: auto;
+	}
+	.title {
+		font-size: 28px;
+	}
+	.inputtextarea{
+		max-height: 270px;
+		font-size: 26px;
+	}
+	.info{
+		font-size: 12px;
+	}
+	.right{
+		height: 100%;
+	}
+	.right.ajustar {
+		height: 100%;
+	}
+	.munieco{
+		display: none;
+	}
+	.textoFinal{
+		font-size: 18px;
+	}
+	.nombre{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 440px){
+	.header {
+		width: 90%;
+		height: auto;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		gap: 2em;
+	}
+	.button_encriptar,
+	.button_desencriptar,
+	.button_copiar {
+		width: 100%;
+		height: 50px;
+		border-radius: 19px;
+		font-size: 14px;
+	}
+	.title{
+		width: 50%;
+		font-size: 22px;
+	}
+	.inputtextarea{
+		max-height: 200px;
+		font-size: 20px;
+	}
+	.info{
+		font-size: 10px;
+	}
+	.textoFinal{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 230px) {
+	.button_encriptar,
+	.button_desencriptar,
+	.button_copiar {
+		width: 100%;
+		min-width: 100%;
+		height: 40px;
+		border-radius: 15px;
+		font-size: 12px;
+	}
+}

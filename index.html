@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Encriptador" content="challenge encriptador alura" />
+
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+     
+</head>
+<body>
+    <header>
+        <div class="container__header">
+            <div class="header">
+                <a> 
+                    <img class="logo" src="imagenes/logo.png">
+                </a>
+            </div> 
+        </div>
+        
+    </header>
+    <main>
+        <article class="caja">
+            <section class="texto" id="texto">
+                <textarea class="inputtextarea" id="textoInput" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <div class="content_botones">
+                    <span class="info">
+                        <img src="imagenes/advertencia.png" alt="advertencia" />
+                        Solo letras minúsculas y sin acentos
+                    </span>
+                    <div class="botones">
+                        <button id="button_encriptar" class="button_encriptar">Encriptar</button>
+                        <button id="button_desencriptar" class="button_desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="right" id="rigth">
+                <img id="textencrip" class="textencrip" src="imagenes/munieco.png" alt="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.">
+                <textarea id="textoFinal" class="textoFinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="textoInfo" class="info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="button_copiar bn_ocultar" id="button_copiar">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <footer class="footer ">
+        <p class="nombre">Viviana Vargas
+        </p>
+        <div>
+            <a href="https://github.com/VivianaVargas" target="_blank">
+                <img class="git" src="imagenes/git.png" />
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</body>
+
+</html>
