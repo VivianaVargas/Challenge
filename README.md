@@ -2,6 +2,7 @@
 Encriptador - Challenge Alura
 Las "llaves" de encriptación que utilizaremos son las siguientes:
 
+## Logica
 * La letra "e" es convertida para "enter"
 * La letra "i" es convertida para "imes"
 * La letra "a" es convertida para "ai"
