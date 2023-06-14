@@ -1,4 +1,4 @@
-# Chanllenge
+# Chanllenge Alura
 Encriptador - Challenge Alura
 Las "llaves" de encriptación que utilizaremos son las siguientes:
 
